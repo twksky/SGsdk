@@ -9,7 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "SGAudioManger.h"
 #import "UploadFileManager.h"
-#import "Macro.h"
+
+/*
+ 线上：http://wanba.imyingqi.com/wechat/
+ 线下：http://dev.imyingqi.com/wechat/
+ */
+//#define KHostName @"http://dev.imyingqi.com/wechat/"
+//#define KHostName @"http://wanba.imyingqi.com/wechat/"
+
 
 @protocol SGApiDelegate <NSObject>
 @optional
@@ -52,6 +59,7 @@
 
 +(void)GameCode:(NSString *)gameCode;
 
++(void)HostName:(NSString *)HostName;
 
 /**
  是否安装微信

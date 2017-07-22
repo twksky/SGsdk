@@ -7,7 +7,8 @@
 #import "APIServer.h"
 #import "SGAppUtils.h"
 #import "SGJSONUtils.h"
-
+#import "GTMBase64.h"
+#import <CommonCrypto/CommonCryptor.h>
 
 // 警告!!!必须作为最后一个引入,且必须在.m或.mm中引入，否则呵呵!!!
 //#import "SCHook.h"
@@ -157,7 +158,7 @@
             NSRange range = [resultStr rangeOfString:@"result_Code"];
 
             if (range.location == NSNotFound) {
-                NSString    *encryptCacheName = [request.cacheName tripleDES];
+                NSString    *encryptCacheName = request.cacheName;
                 NSString    *path = [NSString stringWithFormat:@"%@%@", HttpCacheFilePath, encryptCacheName];
                 NSData      *encryptCacheData = [request.data tripleDES];
                 [encryptCacheData writeToFile:path atomically:YES];
@@ -425,10 +426,9 @@
 //            [SGJSONUtils ObjectToJsonString:getRequestHeader()];
 //            [getRequestHeader() toJsonString];
             NSLog(@"before$$****2");
-            headers[@"headKey"] = [keyString encryptString];
+            headers[@"headKey"] = [self encryptString:keyString];
             NSLog(@"before$$****3");
-            NSData *pd = [SGJSONUtils ObjectToJsonData:[[SGJSONUtils ObjectToJsonString:content] encryptString]];
-//            [[[content toJsonString] encryptString] toUTF8Data];
+            NSData *pd = [SGJSONUtils ObjectToJsonData:[self encryptString:[SGJSONUtils ObjectToJsonString:content]]];
 
             NSData *res = [APIServer postBinarySyncEx:url headers:headers data:pd successBlock:nil faildBlock:nil];
 
@@ -459,7 +459,7 @@
 
     if (headJSONString.length && headJSONString) {
         NSLog(@"before$$****4");
-        [request setValue:[headJSONString encryptString] forHTTPHeaderField:@"headKey"];
+        [request setValue:[self encryptString:headJSONString] forHTTPHeaderField:@"headKey"];
         [request setValue:@"ios" forHTTPHeaderField:@"ios"];
     }
 
@@ -472,7 +472,7 @@
     
     NSLog(@"***twk****str = %@",str);
     NSLog(@"before$$****5");
-    NSData *bodyData = [[str encryptString] dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *bodyData = [[self encryptString:str] dataUsingEncoding:NSUTF8StringEncoding];
 
     /*
      *    [request setValue:@"AppleWebKit/533.18.1 (KHTML, like Gecko) Version/5.0.2 Safari/533.18.5" forHTTPHeaderField:@"User-Agent"];
@@ -549,13 +549,13 @@
             //            [SGJSONUtils ObjectToJsonString:getRequestHeader()];
             //            [getRequestHeader() toJsonString];
             NSLog(@"before$$****6");
-            headers[@"headKey"] = [keyString encryptString];
+            headers[@"headKey"] = [self encryptString:keyString];
             
-            NSData *pd = [[[SGJSONUtils ObjectToJsonString:content] encryptString] dataUsingEncoding:NSUTF8StringEncoding];
-            //            [[[content toJsonString] encryptString] toUTF8Data];
+            NSData *pd = [[self encryptString:[SGJSONUtils ObjectToJsonString:content]] dataUsingEncoding:NSUTF8StringEncoding];
+            
             NSLog(@"******%@",content);
             NSLog(@"======%@",[SGJSONUtils ObjectToJsonString:content]);
-            NSLog(@"======%@",[[SGJSONUtils ObjectToJsonString:content] encryptString]);
+            NSLog(@"======%@",[self encryptString:[SGJSONUtils ObjectToJsonString:content]]);
             NSLog(@"======%@",pd);
             
             [APIServer postBinaryWithURL:url headers:headers data:pd successBlock:^(NSData *respone, NSError *error) {
@@ -592,7 +592,7 @@
 
     if (headJSONString.length && headJSONString) {
         NSLog(@"before$$****7");
-        [request setValue:[headJSONString encryptString] forHTTPHeaderField:@"headKey"];
+        [request setValue:[self encryptString:headJSONString] forHTTPHeaderField:@"headKey"];
         [request setValue:@"ios" forHTTPHeaderField:@"ios"];
     }
 
@@ -604,7 +604,7 @@
     
     NSLog(@"***twk****str = %@",str);
     
-    NSData *bodyData = [[str encryptString] dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *bodyData = [[self encryptString:str] dataUsingEncoding:NSUTF8StringEncoding];
 
     /* 设置Content-Length */
     if (bodyData && [bodyData length]) {
@@ -693,6 +693,8 @@
     @try
     {
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        
+        NSLog(@"盈麒SDK Debug：\n%@\n%@",url,dict);
         
         if (successBlock) {
             [dict setObject:[successBlock copy] forKey:SuccessBlock];
@@ -800,6 +802,32 @@
     //    NSLog(@"http头部: === %@",httpHeader);
 
     return httpHeader;
+}
+
+- (NSString *)encryptString:(NSString *)str
+{
+    
+    Byte    iv[9] = {1, 2, 3, 4, 5, 6, 7, 8};
+    size_t  numBytesEncrypted;
+    NSData  *contantData = [str dataUsingEncoding:NSUTF8StringEncoding];
+    Byte    *plaintext = (Byte *)[contantData bytes];
+    Byte    *buffer[1024 * 32];
+    
+    memset(buffer, 0, sizeof(buffer));
+    char key[] = "hqi/FjjcBxA=";
+    CCCrypt(kCCEncrypt,
+            kCCAlgorithmDES,
+            kCCOptionPKCS7Padding,
+            key,
+            kCCKeySizeDES,
+            iv,
+            plaintext,
+            contantData.length,
+            &buffer,
+            1024 * 32,
+            &numBytesEncrypted);
+    //    DebugLog(@"%zi", numBytesEncrypted);
+    return [GTMBase64 stringByEncodingBytes:&buffer length:numBytesEncrypted];
 }
 
 @end

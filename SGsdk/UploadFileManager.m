@@ -26,6 +26,8 @@
 //  Copyright (c) 2014年 Yung. All rights reserved.
 //
 
+extern NSString* KHostName;
+
 #pragma mark - 七牛上传
 #define RequestContantCmdStype_QiniuGetToken      [NSString stringWithFormat:@"%@getQiniuToken.do",KHostName]
 #import "UploadFileManager.h"
@@ -64,11 +66,15 @@
     self.progressBlock = progressBlock;
     self.completionBlock = completionBlock;
     self.failedBlock = failedBlock;
+    NSString *code = [[NSUserDefaults standardUserDefaults] objectForKey:@"gameCode"];
+    if (!code) {
+        code = @"2";
+    }
     
     NSMutableDictionary *jsonDic = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                     gameToken,@"gameToken",
                                     uid, @"uid",
-                                    @(2), @"gameCode",
+                                    code, @"gameCode",
                                     @(1),@"type",
                                     nil];
     

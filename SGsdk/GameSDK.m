@@ -8,9 +8,11 @@
 
 #import "GameSDK.h"
 #import "SGHTTPManager.h"
-#import "Macro.h"
+#import "SGsdk.h"
 #import "SGAppUtils.h"
 #import "WXApi.h"
+
+extern NSString* KHostName;
 
 @implementation GameSDK
 

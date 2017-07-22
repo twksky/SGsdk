@@ -185,6 +185,17 @@
 
     NSLog(@"头部：%@",[self getRequestHeaderWithEncrypt]);
     
+    NSString *channel = [[NSUserDefaults standardUserDefaults] objectForKey:@"channel"];
+    NSString *gameCode = [[NSUserDefaults standardUserDefaults] objectForKey:@"gameCode"];
+
+    if (channel) {
+        [content setObject:channel forKey:@"channel"];
+    }
+    
+    if (gameCode) {
+        [content setObject:gameCode forKey:@"gameCode"];
+    }
+    
     [[SGHttpRequest instance] asyncPostRequestWithEncrypt:url content:content successBlock:^(NSData *data) {
         successBlock(data);
     } failedBlock:^(NSError *error) {

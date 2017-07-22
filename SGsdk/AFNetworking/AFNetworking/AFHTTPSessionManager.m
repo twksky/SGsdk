@@ -20,7 +20,7 @@
 // THE SOFTWARE.
 
 #import "AFHTTPSessionManager.h"
-#import "NSString+Code.h"
+//#import "NSString+Code.h"
 
 #if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000) || (defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && __MAC_OS_X_VERSION_MAX_ALLOWED >= 1090) || TARGET_WATCH_OS
 
@@ -29,6 +29,9 @@
 
 #import <Availability.h>
 #import <Security/Security.h>
+
+#import "GTMBase64.h"
+#import <CommonCrypto/CommonCryptor.h>
 
 #ifdef _SYSTEMCONFIGURATION_H
 #import <netinet/in.h>
@@ -145,7 +148,7 @@
     
     NSLog(@"before$$****1");
     
-    NSData *pd = [[[self dictionaryToJson:dic] encryptString] dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *pd = [[self encryptString:[self dictionaryToJson:dic]] dataUsingEncoding:NSUTF8StringEncoding];
     
     NSLog(@"$$****%@",pd);
     
@@ -353,6 +356,33 @@
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     
 }
+
+- (NSString *)encryptString:(NSString *)str
+{
+
+    Byte    iv[9] = {1, 2, 3, 4, 5, 6, 7, 8};
+    size_t  numBytesEncrypted;
+    NSData  *contantData = [str dataUsingEncoding:NSUTF8StringEncoding];
+    Byte    *plaintext = (Byte *)[contantData bytes];
+    Byte    *buffer[1024 * 32];
+
+    memset(buffer, 0, sizeof(buffer));
+    char key[] = "hqi/FjjcBxA=";
+    CCCrypt(kCCEncrypt,
+        kCCAlgorithmDES,
+        kCCOptionPKCS7Padding,
+        key,
+        kCCKeySizeDES,
+        iv,
+        plaintext,
+        contantData.length,
+        &buffer,
+        1024 * 32,
+        &numBytesEncrypted);
+    //    DebugLog(@"%zi", numBytesEncrypted);
+    return [GTMBase64 stringByEncodingBytes:&buffer length:numBytesEncrypted];
+}
+
 
 @end
 

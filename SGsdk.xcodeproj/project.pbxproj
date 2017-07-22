@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6004BE5B1DBDAE0D00BAC0AE /* NSString+Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 6004BE5A1DBDAE0D00BAC0AE /* NSString+Code.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6004BE5E1DBDAECE00BAC0AE /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6004BE5D1DBDAECE00BAC0AE /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		60086E7C1DC0D5CB00FB4D1B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 60086E551DC0D5CB00FB4D1B /* AFHTTPRequestOperation.m */; };
 		60086E7D1DC0D5CB00FB4D1B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60086E571DC0D5CB00FB4D1B /* AFHTTPRequestOperationManager.m */; };
@@ -28,10 +27,7 @@
 		60086E8C1DC0D5CB00FB4D1B /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 60086E791DC0D5CB00FB4D1B /* UIRefreshControl+AFNetworking.m */; };
 		60086E8D1DC0D5CB00FB4D1B /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 60086E7B1DC0D5CB00FB4D1B /* UIWebView+AFNetworking.m */; };
 		6010FA361DB9CA180037DC5E /* SGHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6010FA351DB9CA180037DC5E /* SGHTTPManager.m */; };
-		601D49FF1DB4A75A006B90C1 /* SGsdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 601D49FE1DB4A75A006B90C1 /* SGsdk.m */; };
-		601D4A001DB4A75A006B90C1 /* SGsdk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 601D49FD1DB4A75A006B90C1 /* SGsdk.h */; };
 		601D4A351DB4B83C006B90C1 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 601D4A2F1DB4B83C006B90C1 /* libWeChatSDK.a */; };
-		60423F0C1DBDF3E000EDD8B1 /* SGAudioManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 60423F0B1DBDF3E000EDD8B1 /* SGAudioManger.m */; };
 		60423F401DBE01B200EDD8B1 /* QN_GTM_Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 60423F101DBE01B200EDD8B1 /* QN_GTM_Base64.m */; };
 		60423F411DBE01B200EDD8B1 /* QNALAssetFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 60423F121DBE01B200EDD8B1 /* QNALAssetFile.m */; };
 		60423F421DBE01B200EDD8B1 /* QNAsyncRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 60423F141DBE01B200EDD8B1 /* QNAsyncRun.m */; };
@@ -76,8 +72,7 @@
 		60423FAC1DBE119500EDD8B1 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60423FA01DBE119500EDD8B1 /* libopencore-amrwb.a */; };
 		60423FAD1DBE119500EDD8B1 /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60423FA81DBE119500EDD8B1 /* VoiceConverter.mm */; };
 		604D1DCA1DD0AF1C008AD4F9 /* SGJSONUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D1DC91DD0AF1C008AD4F9 /* SGJSONUtils.m */; };
-		609FFD961DBF06B80079035C /* UploadFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 609FFD951DBF06B80079035C /* UploadFileManager.m */; };
-		609FFD991DBF37390079035C /* QiNiuTokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 609FFD981DBF37390079035C /* QiNiuTokenModel.m */; };
+		604F04161F208E67007C32AE /* YingQiSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 604F04151F208E67007C32AE /* YingQiSDK.m */; };
 		609FFDB11DBF37ED0079035C /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 609FFD9E1DBF37ED0079035C /* JSONModel.m */; };
 		609FFDB21DBF37ED0079035C /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 609FFDA01DBF37ED0079035C /* JSONModelClassProperty.m */; };
 		609FFDB31DBF37ED0079035C /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 609FFDA21DBF37ED0079035C /* JSONModelError.m */; };
@@ -86,14 +81,12 @@
 		609FFDB61DBF37ED0079035C /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 609FFDAA1DBF37ED0079035C /* JSONModel+networking.m */; };
 		609FFDB71DBF37ED0079035C /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 609FFDAD1DBF37ED0079035C /* JSONKeyMapper.m */; };
 		609FFDB81DBF37ED0079035C /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 609FFDAF1DBF37ED0079035C /* JSONValueTransformer.m */; };
-		60D4AD851E8374E500DEE9D1 /* GameSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D4AD841E8374E500DEE9D1 /* GameSDK.m */; };
 		60E11D0B1DBC95BC0014DC0D /* SGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E11D0A1DBC95BC0014DC0D /* SGAppUtils.m */; };
 		60F5D32E1DE6E313006A7AF4 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60423F9F1DBE119500EDD8B1 /* libopencore-amrnb.a */; };
 		60FD53381DC1AD480032586F /* APIServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD53371DC1AD480032586F /* APIServer.m */; };
 		60FD533B1DC1ADC40032586F /* SGHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD533A1DC1ADC40032586F /* SGHttpRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		60FD533E1DC1AEE00032586F /* NSData+Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD533D1DC1AEE00032586F /* NSData+Code.m */; };
 		60FD53411DC1AF1C0032586F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD53401DC1AF1C0032586F /* Reachability.m */; };
-		60FD53F71DC1E1840032586F /* SGShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD53F61DC1E1840032586F /* SGShareManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -103,15 +96,12 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				601D4A001DB4A75A006B90C1 /* SGsdk.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6004BE591DBDAE0D00BAC0AE /* NSString+Code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Code.h"; sourceTree = "<group>"; };
-		6004BE5A1DBDAE0D00BAC0AE /* NSString+Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Code.m"; sourceTree = "<group>"; };
 		6004BE5C1DBDAECE00BAC0AE /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		6004BE5D1DBDAECE00BAC0AE /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		6004BE5F1DBDAEEC00BAC0AE /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -157,16 +147,12 @@
 		6010FA341DB9CA180037DC5E /* SGHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHTTPManager.h; sourceTree = "<group>"; };
 		6010FA351DB9CA180037DC5E /* SGHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHTTPManager.m; sourceTree = "<group>"; };
 		601D49FA1DB4A75A006B90C1 /* libSGsdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSGsdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		601D49FD1DB4A75A006B90C1 /* SGsdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGsdk.h; sourceTree = "<group>"; };
-		601D49FE1DB4A75A006B90C1 /* SGsdk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGsdk.m; sourceTree = "<group>"; };
 		601D4A2F1DB4B83C006B90C1 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		601D4A301DB4B83C006B90C1 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
 		601D4A311DB4B83C006B90C1 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		601D4A321DB4B83C006B90C1 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		601D4A331DB4B83C006B90C1 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		601D4A341DB4B83C006B90C1 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		60423F0A1DBDF3E000EDD8B1 /* SGAudioManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAudioManger.h; sourceTree = "<group>"; };
-		60423F0B1DBDF3E000EDD8B1 /* SGAudioManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGAudioManger.m; sourceTree = "<group>"; };
 		60423F0F1DBE01B200EDD8B1 /* QN_GTM_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QN_GTM_Base64.h; sourceTree = "<group>"; };
 		60423F101DBE01B200EDD8B1 /* QN_GTM_Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QN_GTM_Base64.m; sourceTree = "<group>"; };
 		60423F111DBE01B200EDD8B1 /* QNALAssetFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNALAssetFile.h; sourceTree = "<group>"; };
@@ -267,10 +253,8 @@
 		60423FA81DBE119500EDD8B1 /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
 		604D1DC81DD0AF1C008AD4F9 /* SGJSONUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGJSONUtils.h; sourceTree = "<group>"; };
 		604D1DC91DD0AF1C008AD4F9 /* SGJSONUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGJSONUtils.m; sourceTree = "<group>"; };
-		609FFD941DBF06B80079035C /* UploadFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadFileManager.h; sourceTree = "<group>"; };
-		609FFD951DBF06B80079035C /* UploadFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadFileManager.m; sourceTree = "<group>"; };
-		609FFD971DBF37390079035C /* QiNiuTokenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiNiuTokenModel.h; sourceTree = "<group>"; };
-		609FFD981DBF37390079035C /* QiNiuTokenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiNiuTokenModel.m; sourceTree = "<group>"; };
+		604F04141F208E67007C32AE /* YingQiSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YingQiSDK.h; sourceTree = "<group>"; };
+		604F04151F208E67007C32AE /* YingQiSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YingQiSDK.m; sourceTree = "<group>"; };
 		609FFD9B1DBF37ED0079035C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		609FFD9D1DBF37ED0079035C /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
 		609FFD9E1DBF37ED0079035C /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
@@ -290,9 +274,6 @@
 		609FFDAE1DBF37ED0079035C /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
 		609FFDAF1DBF37ED0079035C /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
 		609FFDB01DBF37ED0079035C /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		60D4AD831E8374E500DEE9D1 /* GameSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSDK.h; sourceTree = "<group>"; };
-		60D4AD841E8374E500DEE9D1 /* GameSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSDK.m; sourceTree = "<group>"; };
-		60D4AD871E83778700DEE9D1 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		60E11D091DBC95BC0014DC0D /* SGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAppUtils.h; sourceTree = "<group>"; };
 		60E11D0A1DBC95BC0014DC0D /* SGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGAppUtils.m; sourceTree = "<group>"; };
 		60FD53361DC1AD480032586F /* APIServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIServer.h; sourceTree = "<group>"; };
@@ -303,8 +284,6 @@
 		60FD533D1DC1AEE00032586F /* NSData+Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Code.m"; sourceTree = "<group>"; };
 		60FD533F1DC1AF1C0032586F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		60FD53401DC1AF1C0032586F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		60FD53F51DC1E1840032586F /* SGShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGShareManager.h; sourceTree = "<group>"; };
-		60FD53F61DC1E1840032586F /* SGShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGShareManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -404,28 +383,15 @@
 			children = (
 				60D59A271DB7628F00AFF977 /* Vender */,
 				601D4A2E1DB4B81F006B90C1 /* weixin */,
-				60D4AD871E83778700DEE9D1 /* Macro.h */,
-				601D49FD1DB4A75A006B90C1 /* SGsdk.h */,
-				601D49FE1DB4A75A006B90C1 /* SGsdk.m */,
-				60D4AD831E8374E500DEE9D1 /* GameSDK.h */,
-				60D4AD841E8374E500DEE9D1 /* GameSDK.m */,
-				60423F0A1DBDF3E000EDD8B1 /* SGAudioManger.h */,
-				60423F0B1DBDF3E000EDD8B1 /* SGAudioManger.m */,
+				604F04141F208E67007C32AE /* YingQiSDK.h */,
+				604F04151F208E67007C32AE /* YingQiSDK.m */,
 				6010FA341DB9CA180037DC5E /* SGHTTPManager.h */,
 				6010FA351DB9CA180037DC5E /* SGHTTPManager.m */,
 				60E11D091DBC95BC0014DC0D /* SGAppUtils.h */,
 				60E11D0A1DBC95BC0014DC0D /* SGAppUtils.m */,
-				6004BE591DBDAE0D00BAC0AE /* NSString+Code.h */,
-				6004BE5A1DBDAE0D00BAC0AE /* NSString+Code.m */,
 				6004BE5C1DBDAECE00BAC0AE /* GTMBase64.h */,
 				6004BE5D1DBDAECE00BAC0AE /* GTMBase64.m */,
 				6004BE5F1DBDAEEC00BAC0AE /* GTMDefines.h */,
-				609FFD941DBF06B80079035C /* UploadFileManager.h */,
-				609FFD951DBF06B80079035C /* UploadFileManager.m */,
-				609FFD971DBF37390079035C /* QiNiuTokenModel.h */,
-				609FFD981DBF37390079035C /* QiNiuTokenModel.m */,
-				60FD53F51DC1E1840032586F /* SGShareManager.h */,
-				60FD53F61DC1E1840032586F /* SGShareManager.m */,
 			);
 			path = SGsdk;
 			sourceTree = "<group>";
@@ -807,7 +773,6 @@
 				604D1DCA1DD0AF1C008AD4F9 /* SGJSONUtils.m in Sources */,
 				60423F881DBE113100EDD8B1 /* QNDomain.m in Sources */,
 				60086E7D1DC0D5CB00FB4D1B /* AFHTTPRequestOperationManager.m in Sources */,
-				60FD53F71DC1E1840032586F /* SGShareManager.m in Sources */,
 				60423F8D1DBE113100EDD8B1 /* QNDnspodFree.m in Sources */,
 				60086E831DC0D5CB00FB4D1B /* AFURLResponseSerialization.m in Sources */,
 				60423F431DBE01B200EDD8B1 /* QNCrc32.m in Sources */,
@@ -823,7 +788,6 @@
 				609FFDB31DBF37ED0079035C /* JSONModelError.m in Sources */,
 				60423F8F1DBE113100EDD8B1 /* QNHosts.m in Sources */,
 				60423F401DBE01B200EDD8B1 /* QN_GTM_Base64.m in Sources */,
-				601D49FF1DB4A75A006B90C1 /* SGsdk.m in Sources */,
 				6004BE5E1DBDAECE00BAC0AE /* GTMBase64.m in Sources */,
 				609FFDB51DBF37ED0079035C /* JSONHTTPClient.m in Sources */,
 				60086E881DC0D5CB00FB4D1B /* UIAlertView+AFNetworking.m in Sources */,
@@ -834,7 +798,6 @@
 				60423F8B1DBE113100EDD8B1 /* QNRecord.m in Sources */,
 				60423F4C1DBE01B200EDD8B1 /* QNUserAgent.m in Sources */,
 				60423FAD1DBE119500EDD8B1 /* VoiceConverter.mm in Sources */,
-				60423F0C1DBDF3E000EDD8B1 /* SGAudioManger.m in Sources */,
 				60423F4A1DBE01B200EDD8B1 /* QNResponseInfo.m in Sources */,
 				60086E8B1DC0D5CB00FB4D1B /* UIProgressView+AFNetworking.m in Sources */,
 				60423F531DBE01B200EDD8B1 /* QNUpToken.m in Sources */,
@@ -850,7 +813,6 @@
 				609FFDB11DBF37ED0079035C /* JSONModel.m in Sources */,
 				60086E7F1DC0D5CB00FB4D1B /* AFNetworkReachabilityManager.m in Sources */,
 				60423F891DBE113100EDD8B1 /* QNLruCache.m in Sources */,
-				609FFD961DBF06B80079035C /* UploadFileManager.m in Sources */,
 				60086E7E1DC0D5CB00FB4D1B /* AFHTTPSessionManager.m in Sources */,
 				60423F481DBE01B200EDD8B1 /* QNSystem.m in Sources */,
 				60086E8A1DC0D5CB00FB4D1B /* UIImageView+AFNetworking.m in Sources */,
@@ -862,20 +824,18 @@
 				60423F451DBE01B200EDD8B1 /* QNFile.m in Sources */,
 				60423F521DBE01B200EDD8B1 /* QNUploadOption.m in Sources */,
 				60423F501DBE01B200EDD8B1 /* QNResumeUpload.m in Sources */,
-				6004BE5B1DBDAE0D00BAC0AE /* NSString+Code.m in Sources */,
 				60423F4B1DBE01B200EDD8B1 /* QNSessionManager.m in Sources */,
 				60423F961DBE113100EDD8B1 /* QNHex.m in Sources */,
 				60086E811DC0D5CB00FB4D1B /* AFURLConnectionOperation.m in Sources */,
-				609FFD991DBF37390079035C /* QiNiuTokenModel.m in Sources */,
 				6010FA361DB9CA180037DC5E /* SGHTTPManager.m in Sources */,
 				60423F4E1DBE01B200EDD8B1 /* QNConfiguration.m in Sources */,
-				60D4AD851E8374E500DEE9D1 /* GameSDK.m in Sources */,
 				60423F411DBE01B200EDD8B1 /* QNALAssetFile.m in Sources */,
 				60FD533E1DC1AEE00032586F /* NSData+Code.m in Sources */,
 				609FFDB21DBF37ED0079035C /* JSONModelClassProperty.m in Sources */,
 				609FFDB61DBF37ED0079035C /* JSONModel+networking.m in Sources */,
 				60423F911DBE113100EDD8B1 /* QNResolvUtil.m in Sources */,
 				60423F511DBE01B200EDD8B1 /* QNUploadManager.m in Sources */,
+				604F04161F208E67007C32AE /* YingQiSDK.m in Sources */,
 				60423F8E1DBE113100EDD8B1 /* QNHijackingDetectWrapper.m in Sources */,
 				60423F921DBE113100EDD8B1 /* QNTxtResolver.m in Sources */,
 				60086E851DC0D5CB00FB4D1B /* README.md in Sources */,

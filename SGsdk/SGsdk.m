@@ -45,6 +45,7 @@
 //
 //@end
 
+NSString *KHostName = @"http://wanba.imyingqi.com/wechat/";
 
 @interface SGsdk()<WXApiDelegate>
 
@@ -87,6 +88,10 @@ static NSString *kAppSecret = nil;
 +(void)GameCode:(NSString *)gameCode{
     [[NSUserDefaults standardUserDefaults] setObject:gameCode forKey:@"gameCode"];
     [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++(void)HostName:(NSString *)HostName{
+    KHostName = HostName;
 }
 
 +(void)sg_RegisterApp:(NSString *)appKey{
@@ -255,6 +260,8 @@ static NSString *kAppSecret = nil;
     }
     
     [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userLoginVisitor.do",KHostName] content:[NSMutableDictionary dictionaryWithObjectsAndKeys:@(code.intValue),@"gameCode", nil] successBlock:^(NSData *data) {
+        
+        NSLog(@"请求地址%@",[NSString stringWithFormat:@"%@userLoginVisitor.do",KHostName]);
         
         NSLog(@"访客登录接口成功！！！%@",[[self class] instance].delegate);
         
