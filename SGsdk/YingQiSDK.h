@@ -37,7 +37,7 @@
 +(void)YingQiSDKRequst_registerAccountWithName:(NSString *)name withPwd:(NSString *)pwd sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
 
 //手动输入账号、用户登录-账号或手机号登录 6
-+(void)YingQiSDKRequst_loginWithNumberStr:(NSString *)numberStr withPwd:(NSString *)pwd sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
++(void)YingQiSDKRequst_loginWithNumberStr:(NSString *)numberStr withPwd:(NSString *)pwd withLoginKey:(NSString *)loginKey sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
 
 //用户登录-第三方登录 7
 //+(void)YingQiSDKRequst_registerAccountWithName:(NSString *)name withPwd:(NSString *)pwd;

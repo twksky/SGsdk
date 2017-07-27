@@ -151,10 +151,11 @@ static NSString *K_YingQi_HostName = @"http://123.207.127.85:5527/ChessWebServer
 }
 
 //手动输入账号、用户登录-账号或手机号登录 6
-+(void)YingQiSDKRequst_loginWithNumberStr:(NSString *)numberStr withPwd:(NSString *)pwd sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB{
++(void)YingQiSDKRequst_loginWithNumberStr:(NSString *)numberStr withPwd:(NSString *)pwd withLoginKey:(NSString *)loginKey sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB{
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
     [dictionary setObject:numberStr forKey:@"numberStr"];
     [dictionary setObject:pwd forKey:@"pwd"];
+    [dictionary setObject:loginKey forKey:@"loginKey"];
     
     [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userLogin/login",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
         
