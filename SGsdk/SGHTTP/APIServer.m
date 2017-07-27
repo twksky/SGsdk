@@ -95,13 +95,13 @@ NSMutableDictionary *getRequestHeader()
     }
     
     NSMutableDictionary *httpHeader = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                       /*[SGUserInfoManager instance].uid ?[SGUserInfoManager instance].uid : @"", @"uid",*/
-                                       /*[SGUserInfoManager instance].loginKey ?[SGUserInfoManager instance].loginKey : @"", @"loginKey",*/
+//                                       [SGUserInfoManager instance].uid ?[SGUserInfoManager instance].uid : @"", @"uid",
+//                                       [SGUserInfoManager instance].loginKey ?[SGUserInfoManager instance].loginKey : @"", @"loginKey",
                                        imei ? imei : @"", @"imei",
-                                       /*@([SGUserInfoManager instance].userInfo.gender), @"gender",*/
+//                                       @([SGUserInfoManager instance].userInfo.gender), @"gender",
                                        @([isBroken integerValue]), @"osType",
                                        @"ios", @"ios",
-                                       /*@([version integerValue]), @"version",*/
+//                                       @([version integerValue]), @"version",
                                        [[UIDevice currentDevice] systemVersion], @"mobileVersion",
                                        channel, @"channel",
                                        [SGAppUtils deviceString], @"deviceModel",

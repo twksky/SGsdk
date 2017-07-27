@@ -9,8 +9,8 @@
 #import "YingQiSDK.h"
 #import "SGHTTPManager.h"
 #import "SGAppUtils.h"
-
-static NSString *K_YingQi_HostName = @"http://dev.imyingqi.com/ChessWebServer/";
+//http://123.207.127.85:5527/ChessWebServer/api/userLogin/login
+static NSString *K_YingQi_HostName = @"http://123.207.127.85:5527/ChessWebServer/api/";
 //static NSString *K_YingQi_HostName = @"192.168.1.80/";//汪洋本地部署
 
 @interface YingQiSDK ()
