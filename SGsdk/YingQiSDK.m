@@ -110,6 +110,48 @@ static NSString *K_YingQi_HostName = @"http://123.207.127.85:5527/ChessWebServer
     
 }
 
+// 验证手机号(是否可以进入发送验证码流程)
++(void)YingQiSDKRequst_checkBindPhoneWithNumber:(NSString *)number withUid:(NSInteger)uid sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB{
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+    [dictionary setObject:number forKey:@"number"];
+    [dictionary setObject:@(uid) forKey:@"uid"];
+    
+    [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userPhone/checkBindPhone",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
+        
+        NSDictionary *responseObject = [SGAppUtils JsonDataToObject:data];
+        
+        if ([responseObject[@"state"] boolValue]) {
+            sB(responseObject);
+        }else{
+            fB(responseObject);
+        }
+    } failedBlock:^(NSError *error) {
+        [[[UIAlertView alloc]initWithTitle:@"提示" message:@"网络请求失败" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show];
+    }];
+}
+
+// 绑定手机(带验证码)
++(void)YingQiSDKRequst_BindPhoneWithNumber:(NSString *)number withCheckCode:(NSInteger)checkCode withTempUser:(NSDictionary *)tempUser sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB {
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+    [dictionary setObject:number forKey:@"number"];
+    [dictionary setObject:@(checkCode) forKey:@"checkCode"];
+    [dictionary setObject:tempUser forKey:@"tempUser"];
+    
+    [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userPhone/checkBindPhone",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
+        
+        NSDictionary *responseObject = [SGAppUtils JsonDataToObject:data];
+        
+        if ([responseObject[@"state"] boolValue]) {
+            sB(responseObject);
+        }else{
+            fB(responseObject);
+        }
+    } failedBlock:^(NSError *error) {
+        [[[UIAlertView alloc]initWithTitle:@"提示" message:@"网络请求失败" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show];
+    }];
+}
+
+
 //手机注册-校验手机注册状态（发验证码）4
 +(void)YingQiSDKRequst_checkPhoneRegWithNumber:(NSString *)number withCheckCode:(NSInteger)checkCode sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB{
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
