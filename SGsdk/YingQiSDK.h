@@ -54,10 +54,15 @@
 //用户手机号码找回密码 11
 +(void)YingQiSDKRequst_passwordWithNumber:(NSString *)number withCheckCode:(NSInteger)checkCode withPwd:(NSString *)pwd sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
 
+#pragma mark - 游客
+
 // 验证手机号(是否可以进入发送验证码流程)
 +(void)YingQiSDKRequst_checkBindPhoneWithNumber:(NSString *)number withUid:(NSInteger)uid sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
 
+//绑定手机时给手机号发送验证码
++(void)YingQiSDKRequst_bindSendCheckcode:(NSDictionary *)tempUser andNumber:(NSString *)number sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
+
 // 绑定手机(带验证码)
-+(void)YingQiSDKRequst_BindPhoneWithNumber:(NSString *)number withCheckCode:(NSInteger)checkCode withTempUser:(NSDictionary *)tempUser sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
++(void)YingQiSDKRequst_BindPhoneWithNumber:(NSString *)number withCheckCode:(NSInteger)checkCode withTempUser:(NSDictionary *)tempUser andUid:(NSInteger)uid sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
 
 @end
