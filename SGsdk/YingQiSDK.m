@@ -9,8 +9,8 @@
 #import "YingQiSDK.h"
 #import "SGHTTPManager.h"
 #import "SGAppUtils.h"
-
-static NSString *K_YingQi_HostName = @"http://dev.imyingqi.com/ChessWebServer/";
+//http://123.207.127.85:5527/ChessWebServer/api/userLogin/login
+static NSString *K_YingQi_HostName = @"http://123.207.127.85:5527/ChessWebServer/api/";
 //static NSString *K_YingQi_HostName = @"192.168.1.80/";//汪洋本地部署
 
 @interface YingQiSDK ()
@@ -110,6 +110,48 @@ static NSString *K_YingQi_HostName = @"http://dev.imyingqi.com/ChessWebServer/";
     
 }
 
+// 验证手机号(是否可以进入发送验证码流程)
++(void)YingQiSDKRequst_checkBindPhoneWithNumber:(NSString *)number withUid:(NSInteger)uid sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB{
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+    [dictionary setObject:number forKey:@"number"];
+    [dictionary setObject:@(uid) forKey:@"uid"];
+    
+    [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userPhone/checkBindPhone",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
+        
+        NSDictionary *responseObject = [SGAppUtils JsonDataToObject:data];
+        
+        if ([responseObject[@"state"] boolValue]) {
+            sB(responseObject);
+        }else{
+            fB(responseObject);
+        }
+    } failedBlock:^(NSError *error) {
+        [[[UIAlertView alloc]initWithTitle:@"提示" message:@"网络请求失败" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show];
+    }];
+}
+
+// 绑定手机(带验证码)
++(void)YingQiSDKRequst_BindPhoneWithNumber:(NSString *)number withCheckCode:(NSInteger)checkCode withTempUser:(NSDictionary *)tempUser sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB {
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+    [dictionary setObject:number forKey:@"number"];
+    [dictionary setObject:@(checkCode) forKey:@"checkCode"];
+    [dictionary setObject:tempUser forKey:@"tempUser"];
+    
+    [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userPhone/checkBindPhone",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
+        
+        NSDictionary *responseObject = [SGAppUtils JsonDataToObject:data];
+        
+        if ([responseObject[@"state"] boolValue]) {
+            sB(responseObject);
+        }else{
+            fB(responseObject);
+        }
+    } failedBlock:^(NSError *error) {
+        [[[UIAlertView alloc]initWithTitle:@"提示" message:@"网络请求失败" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show];
+    }];
+}
+
+
 //手机注册-校验手机注册状态（发验证码）4
 +(void)YingQiSDKRequst_checkPhoneRegWithNumber:(NSString *)number withCheckCode:(NSInteger)checkCode sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB{
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
@@ -151,10 +193,11 @@ static NSString *K_YingQi_HostName = @"http://dev.imyingqi.com/ChessWebServer/";
 }
 
 //手动输入账号、用户登录-账号或手机号登录 6
-+(void)YingQiSDKRequst_loginWithNumberStr:(NSString *)numberStr withPwd:(NSString *)pwd sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB{
++(void)YingQiSDKRequst_loginWithNumberStr:(NSString *)numberStr withPwd:(NSString *)pwd withLoginKey:(NSString *)loginKey sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB{
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
     [dictionary setObject:numberStr forKey:@"numberStr"];
     [dictionary setObject:pwd forKey:@"pwd"];
+    [dictionary setObject:loginKey forKey:@"loginKey"];
     
     [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userLogin/login",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
         

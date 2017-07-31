@@ -37,7 +37,7 @@
 +(void)YingQiSDKRequst_registerAccountWithName:(NSString *)name withPwd:(NSString *)pwd sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
 
 //手动输入账号、用户登录-账号或手机号登录 6
-+(void)YingQiSDKRequst_loginWithNumberStr:(NSString *)numberStr withPwd:(NSString *)pwd sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
++(void)YingQiSDKRequst_loginWithNumberStr:(NSString *)numberStr withPwd:(NSString *)pwd withLoginKey:(NSString *)loginKey sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
 
 //用户登录-第三方登录 7
 //+(void)YingQiSDKRequst_registerAccountWithName:(NSString *)name withPwd:(NSString *)pwd;
@@ -53,5 +53,11 @@
 
 //用户手机号码找回密码 11
 +(void)YingQiSDKRequst_passwordWithNumber:(NSString *)number withCheckCode:(NSInteger)checkCode withPwd:(NSString *)pwd sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
+
+// 验证手机号(是否可以进入发送验证码流程)
++(void)YingQiSDKRequst_checkBindPhoneWithNumber:(NSString *)number withUid:(NSInteger)uid sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
+
+// 绑定手机(带验证码)
++(void)YingQiSDKRequst_BindPhoneWithNumber:(NSString *)number withCheckCode:(NSInteger)checkCode withTempUser:(NSDictionary *)tempUser sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
 
 @end
