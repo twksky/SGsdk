@@ -115,7 +115,7 @@ static NSString *K_YingQi_HostName = @"http://123.207.127.85:5527/ChessWebServer
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
     [dictionary setObject:number forKey:@"number"];
     
-    [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userRegister/checkPhoneReg",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
+    [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userPhone/checkPhoneReg",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
         
         NSDictionary *responseObject = [SGAppUtils JsonDataToObject:data];
         
@@ -155,7 +155,7 @@ static NSString *K_YingQi_HostName = @"http://123.207.127.85:5527/ChessWebServer
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
     [dictionary setObject:numberStr forKey:@"numberStr"];
     [dictionary setObject:pwd forKey:@"pwd"];
-    [dictionary setObject:loginKey forKey:@"loginKey"];
+//    [dictionary setObject:loginKey forKey:@"loginKey"];
     
     [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userLogin/login",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
         
@@ -207,12 +207,12 @@ static NSString *K_YingQi_HostName = @"http://123.207.127.85:5527/ChessWebServer
 //用户手机号码找回密码 11
 +(void)YingQiSDKRequst_passwordWithNumber:(NSString *)number withCheckCode:(NSInteger)checkCode withPwd:(NSString *)pwd sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB{
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
-    [dictionary setObject:@(1) forKey:@"type"];
+//    [dictionary setObject:@(1) forKey:@"type"];
     [dictionary setObject:pwd forKey:@"pwd"];
     [dictionary setObject:number forKey:@"number"];
     [dictionary setObject:@(checkCode) forKey:@"checkCode"];
     
-    [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@user.password",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
+    [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userPassword/findPwd",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
         
         NSDictionary *responseObject = [SGAppUtils JsonDataToObject:data];
         
