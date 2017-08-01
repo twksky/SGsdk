@@ -115,7 +115,7 @@ static NSString *K_YingQi_HostName = @"http://123.207.127.85:5527/ChessWebServer
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
     [dictionary setObject:number forKey:@"number"];
     
-    [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userRegister/checkPhoneReg",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
+    [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userPhone/checkPhoneReg",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
         
         NSDictionary *responseObject = [SGAppUtils JsonDataToObject:data];
         

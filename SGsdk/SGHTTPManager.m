@@ -197,9 +197,13 @@
     }
     
     [[SGHttpRequest instance] asyncPostRequestWithEncrypt:url content:content successBlock:^(NSData *data) {
-        successBlock(data);
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            successBlock(data);
+        });
     } failedBlock:^(NSError *error) {
-        failedBlock(error);
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            failedBlock(error);
+        });
     }];
 }
 
