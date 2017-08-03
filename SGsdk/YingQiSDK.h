@@ -60,7 +60,7 @@
 +(void)YingQiSDKRequst_checkBindPhoneWithNumber:(NSString *)number withUid:(NSInteger)uid sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
 
 //绑定手机时给手机号发送验证码
-+(void)YingQiSDKRequst_bindSendCheckcode:(NSDictionary *)tempUser andNumber:(NSString *)number sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
++(void)YingQiSDKRequst_bindSendCheckcode:(NSDictionary *)tempUser andNumber:(NSString *)number uid:(NSInteger)uid sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;
 
 // 绑定手机(带验证码)
 +(void)YingQiSDKRequst_BindPhoneWithNumber:(NSString *)number withCheckCode:(NSInteger)checkCode withTempUser:(NSDictionary *)tempUser andUid:(NSInteger)uid sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB;

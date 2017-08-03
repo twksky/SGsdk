@@ -249,10 +249,11 @@ static NSString *K_YingQi_HostName = @"http://123.207.127.85:5527/ChessWebServer
 
 
 //绑定手机时给手机号发送验证码
-+(void)YingQiSDKRequst_bindSendCheckcode:(NSDictionary *)tempUser andNumber:(NSString *)number sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB{
++(void)YingQiSDKRequst_bindSendCheckcode:(NSDictionary *)tempUser andNumber:(NSString *)number uid:(NSInteger)uid sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB{
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
     [dictionary setObject:number forKey:@"number"];
     [dictionary setObject:tempUser forKey:@"tempUser"];
+    [dictionary setObject:@(uid) forKey:@"uid"];
     
     [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userPhone/bindPhone",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
         
