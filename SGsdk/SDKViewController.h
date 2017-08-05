@@ -13,7 +13,7 @@
 
 @required
 /**
- 登录成功象
+ 登录成功
 
  @param successDic  登录成功服务器返回的对象
  */
@@ -21,7 +21,7 @@
 
 @optional
 /**
- 登录成功
+ 登录失败
  
  @param failDic  登录失败服务器返回的对象（可以不用实现）
  */

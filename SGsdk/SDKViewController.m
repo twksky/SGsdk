@@ -566,7 +566,13 @@
         
         [YingQiSDK YingQiSDKRequst_loginWithNumberStr:self.YingQiView6.tf_1.text withPwd:self.YingQiView6.tf_2.text withLoginKey:nil sB:^(NSDictionary *dic) {
             
-            self.YingQiBaseView.hidden = YES;
+            [YingQiSDK YingQiSDKRequst_verifyWithNumberStr:self.YingQiView6.tf_1 sB:^(NSDictionary *dic) {
+        
+                self.YingQiBaseView.hidden = YES;
+            } fB:^(NSDictionary *dic) {
+                
+            }];
+        
         } fB:^(NSDictionary *dic) {
             
         }];
@@ -790,14 +796,22 @@
 #pragma mark  ================== 最终登录成功的方法 ==================
 - (void)successfullyLogined:(NSDictionary *)dic {
     
-    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(YingQiLogin_Successed:)]) {
+        
+        [self.delegate YingQiLogin_Successed:dic];
+        
+        [self removeFromParentViewController];
+    }
 }
 
 
 #pragma mark  ================== 登录失败的方法 ==================
 - (void)failedLogined:(NSDictionary *)dic {
     
-    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(YingQiLogin_Failed:)]) {
+        
+        [self.delegate YingQiLogin_Failed:dic];
+    }
 }
 
 @end

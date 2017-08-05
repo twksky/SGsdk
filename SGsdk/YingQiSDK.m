@@ -292,5 +292,27 @@ static NSString *K_YingQi_HostName = @"http://123.207.127.85:5527/ChessWebServer
 }
 
 
+/**
+ *  登录成功校验
+ */
++(void)YingQiSDKRequst_verifyWithNumberStr:(NSString *)numberStr sB:(void (^)(NSDictionary * dic)) sB fB:(void (^)(NSDictionary * dic))fB{
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+    [dictionary setObject:numberStr forKey:@"numberStr"];
+    
+    [[SGHTTPManager sharedManager] sg_AsyncPostRequestWithEncrypt:[NSString stringWithFormat:@"%@userLogin/check",K_YingQi_HostName] content:dictionary successBlock:^(NSData *data) {
+        
+        NSDictionary *responseObject = [SGAppUtils JsonDataToObject:data];
+        
+        if ([responseObject[@"state"] boolValue]) {
+            sB(responseObject);
+        }else{
+            fB(responseObject);
+        }
+    } failedBlock:^(NSError *error) {
+        [[[UIAlertView alloc]initWithTitle:@"提示" message:@"网络请求失败" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show];
+    }];
+}
+
+
 
 @end
