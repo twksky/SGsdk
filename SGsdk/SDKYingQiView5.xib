@@ -4,18 +4,14 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SDKViewController">
-            <connections>
-                <outlet property="tf_5_1" destination="kSJ-dC-Xfd" id="KyZ-cu-M1O"/>
-                <outlet property="tf_5_2" destination="Klh-Kz-n3c" id="5QU-XC-ErY"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="EeQ-42-Zv5">
+        <view contentMode="scaleToFill" id="EeQ-42-Zv5" customClass="SDKYingQiView5">
             <rect key="frame" x="0.0" y="0.0" width="420" height="220"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -27,9 +23,6 @@
                     <rect key="frame" x="12" y="9" width="27" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="back"/>
-                    <connections>
-                        <action selector="backBtnClick_5:" destination="-1" eventType="touchUpInside" id="Pnj-Ct-pss"/>
-                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6-20位字符" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Klh-Kz-n3c" customClass="CustomTF">
                     <rect key="frame" x="161" y="82" width="219" height="30"/>
@@ -44,9 +37,6 @@
                     <state key="normal" title="注册" backgroundImage="btn">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="registerBtnClick_5:" destination="-1" eventType="touchUpInside" id="MgJ-na-7vi"/>
-                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的帐号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kSJ-dC-Xfd" customClass="CustomTF">
                     <rect key="frame" x="161" y="33" width="219" height="30"/>
@@ -72,6 +62,12 @@
             </subviews>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backBtn" destination="Csh-aw-d19" id="ZFp-ng-BYF"/>
+                <outlet property="registerBtn" destination="jhn-ix-7K1" id="53G-iK-hDD"/>
+                <outlet property="tf_1" destination="kSJ-dC-Xfd" id="mgC-Zk-FzJ"/>
+                <outlet property="tf_2" destination="Klh-Kz-n3c" id="kIx-ui-2ab"/>
+            </connections>
             <point key="canvasLocation" x="84" y="-44"/>
         </view>
     </objects>

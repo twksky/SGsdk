@@ -89,6 +89,30 @@
 		60FD53411DC1AF1C0032586F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD53401DC1AF1C0032586F /* Reachability.m */; };
 		CB26859E1F3460030057C718 /* SDKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDDCD7B1F34222E00679117 /* SDKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB2685AC1F3460D80057C718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2685751F34337A0057C718 /* Assets.xcassets */; };
+		CB4A5F8A1F3573000064CB73 /* SDKYingQiView1.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A5F881F3573000064CB73 /* SDKYingQiView1.h */; };
+		CB4A5F8B1F3573000064CB73 /* SDKYingQiView1.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A5F891F3573000064CB73 /* SDKYingQiView1.m */; };
+		CB4A5F8E1F35750A0064CB73 /* SDKYingQiView2.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A5F8C1F35750A0064CB73 /* SDKYingQiView2.h */; };
+		CB4A5F8F1F35750A0064CB73 /* SDKYingQiView2.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A5F8D1F35750A0064CB73 /* SDKYingQiView2.m */; };
+		CB4A5F921F3576D20064CB73 /* SDKYingQiView3.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A5F901F3576D20064CB73 /* SDKYingQiView3.h */; };
+		CB4A5F931F3576D20064CB73 /* SDKYingQiView3.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A5F911F3576D20064CB73 /* SDKYingQiView3.m */; };
+		CB4A5F961F3576DD0064CB73 /* SDKYingQiView4.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A5F941F3576DD0064CB73 /* SDKYingQiView4.h */; };
+		CB4A5F971F3576DD0064CB73 /* SDKYingQiView4.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A5F951F3576DD0064CB73 /* SDKYingQiView4.m */; };
+		CB4A5F9A1F3576EA0064CB73 /* SDKYingQiView5.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A5F981F3576EA0064CB73 /* SDKYingQiView5.h */; };
+		CB4A5F9B1F3576EA0064CB73 /* SDKYingQiView5.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A5F991F3576EA0064CB73 /* SDKYingQiView5.m */; };
+		CB4A5F9E1F3576F40064CB73 /* SDKYingQiView6.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A5F9C1F3576F40064CB73 /* SDKYingQiView6.h */; };
+		CB4A5F9F1F3576F40064CB73 /* SDKYingQiView6.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A5F9D1F3576F40064CB73 /* SDKYingQiView6.m */; };
+		CB4A5FA21F3576FF0064CB73 /* SDKYingQiView7.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A5FA01F3576FF0064CB73 /* SDKYingQiView7.h */; };
+		CB4A5FA31F3576FF0064CB73 /* SDKYingQiView7.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A5FA11F3576FF0064CB73 /* SDKYingQiView7.m */; };
+		CB4A5FA61F35774B0064CB73 /* SDKYingQiView8.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A5FA41F35774B0064CB73 /* SDKYingQiView8.h */; };
+		CB4A5FA71F35774B0064CB73 /* SDKYingQiView8.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A5FA51F35774B0064CB73 /* SDKYingQiView8.m */; };
+		CB4A5FAA1F3577550064CB73 /* SDKYingQiView9.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A5FA81F3577550064CB73 /* SDKYingQiView9.h */; };
+		CB4A5FAB1F3577550064CB73 /* SDKYingQiView9.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A5FA91F3577550064CB73 /* SDKYingQiView9.m */; };
+		CB4A5FAE1F3577650064CB73 /* SDKYingQiView10.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A5FAC1F3577650064CB73 /* SDKYingQiView10.h */; };
+		CB4A5FAF1F3577650064CB73 /* SDKYingQiView10.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A5FAD1F3577650064CB73 /* SDKYingQiView10.m */; };
+		CB4A5FB21F3577710064CB73 /* SDKYingQiView11.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A5FB01F3577710064CB73 /* SDKYingQiView11.h */; };
+		CB4A5FB31F3577710064CB73 /* SDKYingQiView11.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A5FB11F3577710064CB73 /* SDKYingQiView11.m */; };
+		CB4A5FB61F35777B0064CB73 /* SDKYingQiView12.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4A5FB41F35777B0064CB73 /* SDKYingQiView12.h */; };
+		CB4A5FB71F35777B0064CB73 /* SDKYingQiView12.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A5FB51F35777B0064CB73 /* SDKYingQiView12.m */; };
 		CB5E02121F3476F9002C7F5A /* SDKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBDDCD7D1F34222E00679117 /* SDKViewController.xib */; };
 		CB5E02131F3476F9002C7F5A /* SDKYingQiView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2685771F3449D20057C718 /* SDKYingQiView1.xib */; };
 		CB5E02141F3476F9002C7F5A /* SDKYingQiView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2685781F3449D20057C718 /* SDKYingQiView2.xib */; };
@@ -318,6 +342,30 @@
 		CB2685821F3449D20057C718 /* SDKYingQiView12.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView12.xib; sourceTree = "<group>"; };
 		CB2685971F345A4A0057C718 /* bundleWithXib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bundleWithXib.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2685991F345A4A0057C718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4A5F881F3573000064CB73 /* SDKYingQiView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKYingQiView1.h; sourceTree = "<group>"; };
+		CB4A5F891F3573000064CB73 /* SDKYingQiView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKYingQiView1.m; sourceTree = "<group>"; };
+		CB4A5F8C1F35750A0064CB73 /* SDKYingQiView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKYingQiView2.h; sourceTree = "<group>"; };
+		CB4A5F8D1F35750A0064CB73 /* SDKYingQiView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKYingQiView2.m; sourceTree = "<group>"; };
+		CB4A5F901F3576D20064CB73 /* SDKYingQiView3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKYingQiView3.h; sourceTree = "<group>"; };
+		CB4A5F911F3576D20064CB73 /* SDKYingQiView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKYingQiView3.m; sourceTree = "<group>"; };
+		CB4A5F941F3576DD0064CB73 /* SDKYingQiView4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKYingQiView4.h; sourceTree = "<group>"; };
+		CB4A5F951F3576DD0064CB73 /* SDKYingQiView4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKYingQiView4.m; sourceTree = "<group>"; };
+		CB4A5F981F3576EA0064CB73 /* SDKYingQiView5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKYingQiView5.h; sourceTree = "<group>"; };
+		CB4A5F991F3576EA0064CB73 /* SDKYingQiView5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKYingQiView5.m; sourceTree = "<group>"; };
+		CB4A5F9C1F3576F40064CB73 /* SDKYingQiView6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKYingQiView6.h; sourceTree = "<group>"; };
+		CB4A5F9D1F3576F40064CB73 /* SDKYingQiView6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKYingQiView6.m; sourceTree = "<group>"; };
+		CB4A5FA01F3576FF0064CB73 /* SDKYingQiView7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKYingQiView7.h; sourceTree = "<group>"; };
+		CB4A5FA11F3576FF0064CB73 /* SDKYingQiView7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKYingQiView7.m; sourceTree = "<group>"; };
+		CB4A5FA41F35774B0064CB73 /* SDKYingQiView8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKYingQiView8.h; sourceTree = "<group>"; };
+		CB4A5FA51F35774B0064CB73 /* SDKYingQiView8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKYingQiView8.m; sourceTree = "<group>"; };
+		CB4A5FA81F3577550064CB73 /* SDKYingQiView9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKYingQiView9.h; sourceTree = "<group>"; };
+		CB4A5FA91F3577550064CB73 /* SDKYingQiView9.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKYingQiView9.m; sourceTree = "<group>"; };
+		CB4A5FAC1F3577650064CB73 /* SDKYingQiView10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKYingQiView10.h; sourceTree = "<group>"; };
+		CB4A5FAD1F3577650064CB73 /* SDKYingQiView10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKYingQiView10.m; sourceTree = "<group>"; };
+		CB4A5FB01F3577710064CB73 /* SDKYingQiView11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKYingQiView11.h; sourceTree = "<group>"; };
+		CB4A5FB11F3577710064CB73 /* SDKYingQiView11.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKYingQiView11.m; sourceTree = "<group>"; };
+		CB4A5FB41F35777B0064CB73 /* SDKYingQiView12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKYingQiView12.h; sourceTree = "<group>"; };
+		CB4A5FB51F35777B0064CB73 /* SDKYingQiView12.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKYingQiView12.m; sourceTree = "<group>"; };
 		CBDDCD7B1F34222E00679117 /* SDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKViewController.h; sourceTree = "<group>"; };
 		CBDDCD7C1F34222E00679117 /* SDKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKViewController.m; sourceTree = "<group>"; };
 		CBDDCD7D1F34222E00679117 /* SDKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKViewController.xib; sourceTree = "<group>"; };
@@ -782,17 +830,41 @@
 				CBDDCD7B1F34222E00679117 /* SDKViewController.h */,
 				CBDDCD7C1F34222E00679117 /* SDKViewController.m */,
 				CBDDCD7D1F34222E00679117 /* SDKViewController.xib */,
+				CB4A5F881F3573000064CB73 /* SDKYingQiView1.h */,
+				CB4A5F891F3573000064CB73 /* SDKYingQiView1.m */,
 				CB2685771F3449D20057C718 /* SDKYingQiView1.xib */,
+				CB4A5F8C1F35750A0064CB73 /* SDKYingQiView2.h */,
+				CB4A5F8D1F35750A0064CB73 /* SDKYingQiView2.m */,
 				CB2685781F3449D20057C718 /* SDKYingQiView2.xib */,
+				CB4A5F901F3576D20064CB73 /* SDKYingQiView3.h */,
+				CB4A5F911F3576D20064CB73 /* SDKYingQiView3.m */,
 				CB2685791F3449D20057C718 /* SDKYingQiView3.xib */,
+				CB4A5F941F3576DD0064CB73 /* SDKYingQiView4.h */,
+				CB4A5F951F3576DD0064CB73 /* SDKYingQiView4.m */,
 				CB26857A1F3449D20057C718 /* SDKYingQiView4.xib */,
+				CB4A5F981F3576EA0064CB73 /* SDKYingQiView5.h */,
+				CB4A5F991F3576EA0064CB73 /* SDKYingQiView5.m */,
 				CB26857B1F3449D20057C718 /* SDKYingQiView5.xib */,
+				CB4A5F9C1F3576F40064CB73 /* SDKYingQiView6.h */,
+				CB4A5F9D1F3576F40064CB73 /* SDKYingQiView6.m */,
 				CB26857C1F3449D20057C718 /* SDKYingQiView6.xib */,
+				CB4A5FA01F3576FF0064CB73 /* SDKYingQiView7.h */,
+				CB4A5FA11F3576FF0064CB73 /* SDKYingQiView7.m */,
 				CB26857D1F3449D20057C718 /* SDKYingQiView7.xib */,
+				CB4A5FA41F35774B0064CB73 /* SDKYingQiView8.h */,
+				CB4A5FA51F35774B0064CB73 /* SDKYingQiView8.m */,
 				CB26857E1F3449D20057C718 /* SDKYingQiView8.xib */,
+				CB4A5FA81F3577550064CB73 /* SDKYingQiView9.h */,
+				CB4A5FA91F3577550064CB73 /* SDKYingQiView9.m */,
 				CB26857F1F3449D20057C718 /* SDKYingQiView9.xib */,
+				CB4A5FAC1F3577650064CB73 /* SDKYingQiView10.h */,
+				CB4A5FAD1F3577650064CB73 /* SDKYingQiView10.m */,
 				CB2685801F3449D20057C718 /* SDKYingQiView10.xib */,
+				CB4A5FB01F3577710064CB73 /* SDKYingQiView11.h */,
+				CB4A5FB11F3577710064CB73 /* SDKYingQiView11.m */,
 				CB2685811F3449D20057C718 /* SDKYingQiView11.xib */,
+				CB4A5FB41F35777B0064CB73 /* SDKYingQiView12.h */,
+				CB4A5FB51F35777B0064CB73 /* SDKYingQiView12.m */,
 				CB2685821F3449D20057C718 /* SDKYingQiView12.xib */,
 				CBDDCD8A1F34222E00679117 /* CustomTF.h */,
 				CBDDCD8B1F34222E00679117 /* CustomTF.m */,
@@ -819,7 +891,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB4A5FA61F35774B0064CB73 /* SDKYingQiView8.h in Headers */,
+				CB4A5FAA1F3577550064CB73 /* SDKYingQiView9.h in Headers */,
+				CB4A5F8E1F35750A0064CB73 /* SDKYingQiView2.h in Headers */,
+				CB4A5FB61F35777B0064CB73 /* SDKYingQiView12.h in Headers */,
+				CB4A5FB21F3577710064CB73 /* SDKYingQiView11.h in Headers */,
+				CB4A5F961F3576DD0064CB73 /* SDKYingQiView4.h in Headers */,
 				CB26859E1F3460030057C718 /* SDKViewController.h in Headers */,
+				CB4A5FAE1F3577650064CB73 /* SDKYingQiView10.h in Headers */,
+				CB4A5FA21F3576FF0064CB73 /* SDKYingQiView7.h in Headers */,
+				CB4A5F9E1F3576F40064CB73 /* SDKYingQiView6.h in Headers */,
+				CB4A5F9A1F3576EA0064CB73 /* SDKYingQiView5.h in Headers */,
+				CB4A5F8A1F3573000064CB73 /* SDKYingQiView1.h in Headers */,
+				CB4A5F921F3576D20064CB73 /* SDKYingQiView3.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -938,26 +1022,33 @@
 				60423F861DBE113100EDD8B1 /* QNIpModel.m in Sources */,
 				604D1DCA1DD0AF1C008AD4F9 /* SGJSONUtils.m in Sources */,
 				60423F881DBE113100EDD8B1 /* QNDomain.m in Sources */,
+				CB4A5FAF1F3577650064CB73 /* SDKYingQiView10.m in Sources */,
 				60086E7D1DC0D5CB00FB4D1B /* AFHTTPRequestOperationManager.m in Sources */,
 				60423F8D1DBE113100EDD8B1 /* QNDnspodFree.m in Sources */,
 				60086E831DC0D5CB00FB4D1B /* AFURLResponseSerialization.m in Sources */,
+				CB4A5FAB1F3577550064CB73 /* SDKYingQiView9.m in Sources */,
+				CB4A5FB31F3577710064CB73 /* SDKYingQiView11.m in Sources */,
 				CBDDCD8E1F34222E00679117 /* SDKViewController.m in Sources */,
 				60423F431DBE01B200EDD8B1 /* QNCrc32.m in Sources */,
 				60086E871DC0D5CB00FB4D1B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				60FD53381DC1AD480032586F /* APIServer.m in Sources */,
 				60423F471DBE01B200EDD8B1 /* QNPHAssetResource.m in Sources */,
 				60423FA91DBE119500EDD8B1 /* amrFileCodec.mm in Sources */,
+				CB4A5F9F1F3576F40064CB73 /* SDKYingQiView6.m in Sources */,
 				60423F8A1DBE113100EDD8B1 /* QNNetworkInfo.m in Sources */,
 				609FFDB41DBF37ED0079035C /* JSONAPI.m in Sources */,
 				60423F871DBE113100EDD8B1 /* QNDnsManager.m in Sources */,
 				60086E841DC0D5CB00FB4D1B /* AFURLSessionManager.m in Sources */,
 				60423F951DBE113100EDD8B1 /* QNGetAddrInfo.m in Sources */,
+				CB4A5F8F1F35750A0064CB73 /* SDKYingQiView2.m in Sources */,
 				609FFDB31DBF37ED0079035C /* JSONModelError.m in Sources */,
 				60423F8F1DBE113100EDD8B1 /* QNHosts.m in Sources */,
+				CB4A5FB71F35777B0064CB73 /* SDKYingQiView12.m in Sources */,
 				60423F401DBE01B200EDD8B1 /* QN_GTM_Base64.m in Sources */,
 				6004BE5E1DBDAECE00BAC0AE /* GTMBase64.m in Sources */,
 				609FFDB51DBF37ED0079035C /* JSONHTTPClient.m in Sources */,
 				60086E881DC0D5CB00FB4D1B /* UIAlertView+AFNetworking.m in Sources */,
+				CB4A5F931F3576D20064CB73 /* SDKYingQiView3.m in Sources */,
 				60423F971DBE113100EDD8B1 /* QNIP.m in Sources */,
 				60423F491DBE01B200EDD8B1 /* QNUrlSafeBase64.m in Sources */,
 				60423F931DBE113100EDD8B1 /* QNRefresher.m in Sources */,
@@ -969,6 +1060,7 @@
 				CBDDCD8F1F34222E00679117 /* CustomTF.m in Sources */,
 				60086E8B1DC0D5CB00FB4D1B /* UIProgressView+AFNetworking.m in Sources */,
 				60423F531DBE01B200EDD8B1 /* QNUpToken.m in Sources */,
+				CB4A5F971F3576DD0064CB73 /* SDKYingQiView4.m in Sources */,
 				60423FAA1DBE119500EDD8B1 /* wav.mm in Sources */,
 				60086E801DC0D5CB00FB4D1B /* AFSecurityPolicy.m in Sources */,
 				60FD533B1DC1ADC40032586F /* SGHttpRequest.m in Sources */,
@@ -978,6 +1070,7 @@
 				60086E821DC0D5CB00FB4D1B /* AFURLRequestSerialization.m in Sources */,
 				60086E861DC0D5CB00FB4D1B /* AFNetworkActivityIndicatorManager.m in Sources */,
 				60086E891DC0D5CB00FB4D1B /* UIButton+AFNetworking.m in Sources */,
+				CB4A5F9B1F3576EA0064CB73 /* SDKYingQiView5.m in Sources */,
 				609FFDB11DBF37ED0079035C /* JSONModel.m in Sources */,
 				60086E7F1DC0D5CB00FB4D1B /* AFNetworkReachabilityManager.m in Sources */,
 				60423F891DBE113100EDD8B1 /* QNLruCache.m in Sources */,
@@ -986,6 +1079,7 @@
 				60086E8A1DC0D5CB00FB4D1B /* UIImageView+AFNetworking.m in Sources */,
 				60086E8C1DC0D5CB00FB4D1B /* UIRefreshControl+AFNetworking.m in Sources */,
 				60423F421DBE01B200EDD8B1 /* QNAsyncRun.m in Sources */,
+				CB4A5FA31F3576FF0064CB73 /* SDKYingQiView7.m in Sources */,
 				609FFDB71DBF37ED0079035C /* JSONKeyMapper.m in Sources */,
 				60423F4F1DBE01B200EDD8B1 /* QNFormUpload.m in Sources */,
 				60423F461DBE01B200EDD8B1 /* QNPHAssetFile.m in Sources */,
@@ -993,9 +1087,11 @@
 				60423F521DBE01B200EDD8B1 /* QNUploadOption.m in Sources */,
 				60423F501DBE01B200EDD8B1 /* QNResumeUpload.m in Sources */,
 				60423F4B1DBE01B200EDD8B1 /* QNSessionManager.m in Sources */,
+				CB4A5F8B1F3573000064CB73 /* SDKYingQiView1.m in Sources */,
 				60423F961DBE113100EDD8B1 /* QNHex.m in Sources */,
 				60086E811DC0D5CB00FB4D1B /* AFURLConnectionOperation.m in Sources */,
 				6010FA361DB9CA180037DC5E /* SGHTTPManager.m in Sources */,
+				CB4A5FA71F35774B0064CB73 /* SDKYingQiView8.m in Sources */,
 				60423F4E1DBE01B200EDD8B1 /* QNConfiguration.m in Sources */,
 				60423F411DBE01B200EDD8B1 /* QNALAssetFile.m in Sources */,
 				60FD533E1DC1AEE00032586F /* NSData+Code.m in Sources */,

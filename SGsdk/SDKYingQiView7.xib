@@ -4,17 +4,14 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SDKViewController">
-            <connections>
-                <outlet property="tf_7_1" destination="f5g-U4-vaJ" id="biJ-AB-LDu"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="c5r-fi-1ch">
+        <view contentMode="scaleToFill" id="c5r-fi-1ch" customClass="SDKYingQiView7">
             <rect key="frame" x="0.0" y="0.0" width="420" height="220"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -26,9 +23,6 @@
                     <rect key="frame" x="12" y="9" width="27" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="back"/>
-                    <connections>
-                        <action selector="backBtnClick_7:" destination="-1" eventType="touchUpInside" id="Qep-Rp-z4w"/>
-                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="找回密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLw-BU-pxZ">
                     <rect key="frame" x="161" y="33" width="167" height="21"/>
@@ -50,9 +44,6 @@
                     <state key="normal" title="确定" backgroundImage="btn">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="confirmBtnClick:" destination="-1" eventType="touchUpInside" id="h5a-6q-ejd"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qb-5z-VGy">
                     <rect key="frame" x="105" y="179" width="210" height="30"/>
@@ -60,9 +51,6 @@
                     <state key="normal" title="未绑定手机, 通过其他方式找回">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
-                    <connections>
-                        <action selector="otherWayBtnClick:" destination="-1" eventType="touchUpInside" id="3F4-X6-0CJ"/>
-                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+86" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMN-fL-FXg">
                     <rect key="frame" x="172" y="86" width="42" height="21"/>
@@ -74,6 +62,12 @@
             </subviews>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backBtn" destination="Kuq-MW-V0x" id="fka-KN-WfN"/>
+                <outlet property="confirmBtn" destination="IYO-9i-RdF" id="zhb-Lp-OLk"/>
+                <outlet property="otherwayBtn" destination="6Qb-5z-VGy" id="G12-z2-7YJ"/>
+                <outlet property="tf_1" destination="f5g-U4-vaJ" id="4i2-sk-RUW"/>
+            </connections>
             <point key="canvasLocation" x="84" y="-44"/>
         </view>
     </objects>
