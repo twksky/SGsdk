@@ -566,9 +566,10 @@
         
         [YingQiSDK YingQiSDKRequst_loginWithNumberStr:self.YingQiView6.tf_1.text withPwd:self.YingQiView6.tf_2.text withLoginKey:nil sB:^(NSDictionary *dic) {
             
-            [YingQiSDK YingQiSDKRequst_verifyWithNumberStr:self.YingQiView6.tf_1 sB:^(NSDictionary *dic) {
+            [YingQiSDK YingQiSDKRequst_verifyWithNumberStr:self.YingQiView6.tf_1.text sB:^(NSDictionary *dic) {
         
                 self.YingQiBaseView.hidden = YES;
+                [self successfullyLogined:dic];
             } fB:^(NSDictionary *dic) {
                 
             }];
@@ -761,9 +762,9 @@
         
         [YingQiSDK YingQiSDKRequst_BindPhoneWithNumber:self.YingQiView10.tf_1.text withCheckCode:[self.YingQiView12.tf_1.text integerValue] withTempUser:self.successDict[@"data"] andUid:uid sB:^(NSDictionary *dic) {
             
+            self.YingQiBaseView.hidden = YES;
             [self successfullyLogined:dic];
             
-            self.YingQiBaseView.hidden = YES;
         } fB:^(NSDictionary *dic) {
             
         }];
