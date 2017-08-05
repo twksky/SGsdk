@@ -87,6 +87,25 @@
 		60FD533B1DC1ADC40032586F /* SGHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD533A1DC1ADC40032586F /* SGHttpRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		60FD533E1DC1AEE00032586F /* NSData+Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD533D1DC1AEE00032586F /* NSData+Code.m */; };
 		60FD53411DC1AF1C0032586F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD53401DC1AF1C0032586F /* Reachability.m */; };
+		CB26859E1F3460030057C718 /* SDKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDDCD7B1F34222E00679117 /* SDKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB2685AC1F3460D80057C718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2685751F34337A0057C718 /* Assets.xcassets */; };
+		CB5E02121F3476F9002C7F5A /* SDKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBDDCD7D1F34222E00679117 /* SDKViewController.xib */; };
+		CB5E02131F3476F9002C7F5A /* SDKYingQiView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2685771F3449D20057C718 /* SDKYingQiView1.xib */; };
+		CB5E02141F3476F9002C7F5A /* SDKYingQiView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2685781F3449D20057C718 /* SDKYingQiView2.xib */; };
+		CB5E02151F3476F9002C7F5A /* SDKYingQiView3.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2685791F3449D20057C718 /* SDKYingQiView3.xib */; };
+		CB5E02161F3476F9002C7F5A /* SDKYingQiView4.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB26857A1F3449D20057C718 /* SDKYingQiView4.xib */; };
+		CB5E02171F3476F9002C7F5A /* SDKYingQiView5.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB26857B1F3449D20057C718 /* SDKYingQiView5.xib */; };
+		CB5E02181F3476F9002C7F5A /* SDKYingQiView6.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB26857C1F3449D20057C718 /* SDKYingQiView6.xib */; };
+		CB5E02191F3476F9002C7F5A /* SDKYingQiView7.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB26857D1F3449D20057C718 /* SDKYingQiView7.xib */; };
+		CB5E021A1F3476F9002C7F5A /* SDKYingQiView8.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB26857E1F3449D20057C718 /* SDKYingQiView8.xib */; };
+		CB5E021B1F3476F9002C7F5A /* SDKYingQiView9.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB26857F1F3449D20057C718 /* SDKYingQiView9.xib */; };
+		CB5E021C1F3476F9002C7F5A /* SDKYingQiView10.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2685801F3449D20057C718 /* SDKYingQiView10.xib */; };
+		CB5E021D1F3476F9002C7F5A /* SDKYingQiView11.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2685811F3449D20057C718 /* SDKYingQiView11.xib */; };
+		CB5E021E1F3476F9002C7F5A /* SDKYingQiView12.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2685821F3449D20057C718 /* SDKYingQiView12.xib */; };
+		CBDDCD8E1F34222E00679117 /* SDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDDCD7C1F34222E00679117 /* SDKViewController.m */; };
+		CBDDCD8F1F34222E00679117 /* CustomTF.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDDCD8B1F34222E00679117 /* CustomTF.m */; };
+		CBDDCD901F34222E00679117 /* CustomTF_2.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDDCD8D1F34222E00679117 /* CustomTF_2.m */; };
+		CBDDCD981F3422C700679117 /* LMJDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDDCD971F3422C700679117 /* LMJDropdownMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -284,6 +303,31 @@
 		60FD533D1DC1AEE00032586F /* NSData+Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Code.m"; sourceTree = "<group>"; };
 		60FD533F1DC1AF1C0032586F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		60FD53401DC1AF1C0032586F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CB2685751F34337A0057C718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB2685771F3449D20057C718 /* SDKYingQiView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView1.xib; sourceTree = "<group>"; };
+		CB2685781F3449D20057C718 /* SDKYingQiView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView2.xib; sourceTree = "<group>"; };
+		CB2685791F3449D20057C718 /* SDKYingQiView3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView3.xib; sourceTree = "<group>"; };
+		CB26857A1F3449D20057C718 /* SDKYingQiView4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView4.xib; sourceTree = "<group>"; };
+		CB26857B1F3449D20057C718 /* SDKYingQiView5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView5.xib; sourceTree = "<group>"; };
+		CB26857C1F3449D20057C718 /* SDKYingQiView6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView6.xib; sourceTree = "<group>"; };
+		CB26857D1F3449D20057C718 /* SDKYingQiView7.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView7.xib; sourceTree = "<group>"; };
+		CB26857E1F3449D20057C718 /* SDKYingQiView8.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView8.xib; sourceTree = "<group>"; };
+		CB26857F1F3449D20057C718 /* SDKYingQiView9.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView9.xib; sourceTree = "<group>"; };
+		CB2685801F3449D20057C718 /* SDKYingQiView10.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView10.xib; sourceTree = "<group>"; };
+		CB2685811F3449D20057C718 /* SDKYingQiView11.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView11.xib; sourceTree = "<group>"; };
+		CB2685821F3449D20057C718 /* SDKYingQiView12.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKYingQiView12.xib; sourceTree = "<group>"; };
+		CB2685971F345A4A0057C718 /* bundleWithXib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bundleWithXib.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2685991F345A4A0057C718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBDDCD7B1F34222E00679117 /* SDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKViewController.h; sourceTree = "<group>"; };
+		CBDDCD7C1F34222E00679117 /* SDKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKViewController.m; sourceTree = "<group>"; };
+		CBDDCD7D1F34222E00679117 /* SDKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKViewController.xib; sourceTree = "<group>"; };
+		CBDDCD8A1F34222E00679117 /* CustomTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTF.h; sourceTree = "<group>"; };
+		CBDDCD8B1F34222E00679117 /* CustomTF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTF.m; sourceTree = "<group>"; };
+		CBDDCD8C1F34222E00679117 /* CustomTF_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTF_2.h; sourceTree = "<group>"; };
+		CBDDCD8D1F34222E00679117 /* CustomTF_2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTF_2.m; sourceTree = "<group>"; };
+		CBDDCD951F3422C700679117 /* dropdownMenu_cornerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropdownMenu_cornerIcon.png; sourceTree = "<group>"; };
+		CBDDCD961F3422C700679117 /* LMJDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJDropdownMenu.h; sourceTree = "<group>"; };
+		CBDDCD971F3422C700679117 /* LMJDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJDropdownMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +338,13 @@
 				60F5D32E1DE6E313006A7AF4 /* libopencore-amrnb.a in Frameworks */,
 				60423FAC1DBE119500EDD8B1 /* libopencore-amrwb.a in Frameworks */,
 				601D4A351DB4B83C006B90C1 /* libWeChatSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2685941F345A4A0057C718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				601D49FC1DB4A75A006B90C1 /* SGsdk */,
+				CB2685981F345A4A0057C718 /* bundleWithXib */,
 				601D49FB1DB4A75A006B90C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -374,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				601D49FA1DB4A75A006B90C1 /* libSGsdk.a */,
+				CB2685971F345A4A0057C718 /* bundleWithXib.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -381,6 +434,8 @@
 		601D49FC1DB4A75A006B90C1 /* SGsdk */ = {
 			isa = PBXGroup;
 			children = (
+				CB2685751F34337A0057C718 /* Assets.xcassets */,
+				CBDDCD7A1F34220800679117 /* VC */,
 				60D59A271DB7628F00AFF977 /* Vender */,
 				601D4A2E1DB4B81F006B90C1 /* weixin */,
 				604F04141F208E67007C32AE /* YingQiSDK.h */,
@@ -712,7 +767,63 @@
 			path = SGHTTP;
 			sourceTree = "<group>";
 		};
+		CB2685981F345A4A0057C718 /* bundleWithXib */ = {
+			isa = PBXGroup;
+			children = (
+				CB2685991F345A4A0057C718 /* Info.plist */,
+			);
+			path = bundleWithXib;
+			sourceTree = "<group>";
+		};
+		CBDDCD7A1F34220800679117 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CBDDCD941F3422C700679117 /* LMJDropdownMenu */,
+				CBDDCD7B1F34222E00679117 /* SDKViewController.h */,
+				CBDDCD7C1F34222E00679117 /* SDKViewController.m */,
+				CBDDCD7D1F34222E00679117 /* SDKViewController.xib */,
+				CB2685771F3449D20057C718 /* SDKYingQiView1.xib */,
+				CB2685781F3449D20057C718 /* SDKYingQiView2.xib */,
+				CB2685791F3449D20057C718 /* SDKYingQiView3.xib */,
+				CB26857A1F3449D20057C718 /* SDKYingQiView4.xib */,
+				CB26857B1F3449D20057C718 /* SDKYingQiView5.xib */,
+				CB26857C1F3449D20057C718 /* SDKYingQiView6.xib */,
+				CB26857D1F3449D20057C718 /* SDKYingQiView7.xib */,
+				CB26857E1F3449D20057C718 /* SDKYingQiView8.xib */,
+				CB26857F1F3449D20057C718 /* SDKYingQiView9.xib */,
+				CB2685801F3449D20057C718 /* SDKYingQiView10.xib */,
+				CB2685811F3449D20057C718 /* SDKYingQiView11.xib */,
+				CB2685821F3449D20057C718 /* SDKYingQiView12.xib */,
+				CBDDCD8A1F34222E00679117 /* CustomTF.h */,
+				CBDDCD8B1F34222E00679117 /* CustomTF.m */,
+				CBDDCD8C1F34222E00679117 /* CustomTF_2.h */,
+				CBDDCD8D1F34222E00679117 /* CustomTF_2.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		CBDDCD941F3422C700679117 /* LMJDropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CBDDCD951F3422C700679117 /* dropdownMenu_cornerIcon.png */,
+				CBDDCD961F3422C700679117 /* LMJDropdownMenu.h */,
+				CBDDCD971F3422C700679117 /* LMJDropdownMenu.m */,
+			);
+			path = LMJDropdownMenu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CB26859D1F345FF00057C718 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB26859E1F3460030057C718 /* SDKViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		601D49F91DB4A75A006B90C1 /* SGsdk */ = {
@@ -722,6 +833,8 @@
 				601D49F61DB4A75A006B90C1 /* Sources */,
 				601D49F71DB4A75A006B90C1 /* Frameworks */,
 				601D49F81DB4A75A006B90C1 /* CopyFiles */,
+				CBDDCDE91F342B4600679117 /* Resources */,
+				CB26859D1F345FF00057C718 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -731,6 +844,23 @@
 			productName = SGsdk;
 			productReference = 601D49FA1DB4A75A006B90C1 /* libSGsdk.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		CB2685961F345A4A0057C718 /* bundleWithXib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB26859A1F345A4A0057C718 /* Build configuration list for PBXNativeTarget "bundleWithXib" */;
+			buildPhases = (
+				CB2685931F345A4A0057C718 /* Sources */,
+				CB2685941F345A4A0057C718 /* Frameworks */,
+				CB2685951F345A4A0057C718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bundleWithXib;
+			productName = bundleWithXib;
+			productReference = CB2685971F345A4A0057C718 /* bundleWithXib.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -743,6 +873,10 @@
 				TargetAttributes = {
 					601D49F91DB4A75A006B90C1 = {
 						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					CB2685961F345A4A0057C718 = {
+						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -760,9 +894,41 @@
 			projectRoot = "";
 			targets = (
 				601D49F91DB4A75A006B90C1 /* SGsdk */,
+				CB2685961F345A4A0057C718 /* bundleWithXib */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB2685951F345A4A0057C718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5E02121F3476F9002C7F5A /* SDKViewController.xib in Resources */,
+				CB5E02131F3476F9002C7F5A /* SDKYingQiView1.xib in Resources */,
+				CB5E02141F3476F9002C7F5A /* SDKYingQiView2.xib in Resources */,
+				CB5E02151F3476F9002C7F5A /* SDKYingQiView3.xib in Resources */,
+				CB5E02161F3476F9002C7F5A /* SDKYingQiView4.xib in Resources */,
+				CB5E02171F3476F9002C7F5A /* SDKYingQiView5.xib in Resources */,
+				CB5E02181F3476F9002C7F5A /* SDKYingQiView6.xib in Resources */,
+				CB5E02191F3476F9002C7F5A /* SDKYingQiView7.xib in Resources */,
+				CB5E021A1F3476F9002C7F5A /* SDKYingQiView8.xib in Resources */,
+				CB5E021B1F3476F9002C7F5A /* SDKYingQiView9.xib in Resources */,
+				CB5E021C1F3476F9002C7F5A /* SDKYingQiView10.xib in Resources */,
+				CB5E021D1F3476F9002C7F5A /* SDKYingQiView11.xib in Resources */,
+				CB5E021E1F3476F9002C7F5A /* SDKYingQiView12.xib in Resources */,
+				CB2685AC1F3460D80057C718 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDDCDE91F342B4600679117 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		601D49F61DB4A75A006B90C1 /* Sources */ = {
@@ -775,6 +941,7 @@
 				60086E7D1DC0D5CB00FB4D1B /* AFHTTPRequestOperationManager.m in Sources */,
 				60423F8D1DBE113100EDD8B1 /* QNDnspodFree.m in Sources */,
 				60086E831DC0D5CB00FB4D1B /* AFURLResponseSerialization.m in Sources */,
+				CBDDCD8E1F34222E00679117 /* SDKViewController.m in Sources */,
 				60423F431DBE01B200EDD8B1 /* QNCrc32.m in Sources */,
 				60086E871DC0D5CB00FB4D1B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				60FD53381DC1AD480032586F /* APIServer.m in Sources */,
@@ -799,6 +966,7 @@
 				60423F4C1DBE01B200EDD8B1 /* QNUserAgent.m in Sources */,
 				60423FAD1DBE119500EDD8B1 /* VoiceConverter.mm in Sources */,
 				60423F4A1DBE01B200EDD8B1 /* QNResponseInfo.m in Sources */,
+				CBDDCD8F1F34222E00679117 /* CustomTF.m in Sources */,
 				60086E8B1DC0D5CB00FB4D1B /* UIProgressView+AFNetworking.m in Sources */,
 				60423F531DBE01B200EDD8B1 /* QNUpToken.m in Sources */,
 				60423FAA1DBE119500EDD8B1 /* wav.mm in Sources */,
@@ -840,12 +1008,21 @@
 				60423F921DBE113100EDD8B1 /* QNTxtResolver.m in Sources */,
 				60086E851DC0D5CB00FB4D1B /* README.md in Sources */,
 				609FFDB81DBF37ED0079035C /* JSONValueTransformer.m in Sources */,
+				CBDDCD981F3422C700679117 /* LMJDropdownMenu.m in Sources */,
 				60FD53411DC1AF1C0032586F /* Reachability.m in Sources */,
 				60423F4D1DBE01B200EDD8B1 /* QNFileRecorder.m in Sources */,
 				60086E8D1DC0D5CB00FB4D1B /* UIWebView+AFNetworking.m in Sources */,
 				60423F851DBE113100EDD8B1 /* QNAssessment.m in Sources */,
+				CBDDCD901F34222E00679117 /* CustomTF_2.m in Sources */,
 				60E11D0B1DBC95BC0014DC0D /* SGAppUtils.m in Sources */,
 				60423F901DBE113100EDD8B1 /* QNResolver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2685931F345A4A0057C718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -988,6 +1165,42 @@
 			};
 			name = Release;
 		};
+		CB26859B1F345A4A0057C718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				INFOPLIST_FILE = bundleWithXib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = zhouyuhan.bundleWithXib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CB26859C1F345A4A0057C718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				INFOPLIST_FILE = bundleWithXib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = zhouyuhan.bundleWithXib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1005,6 +1218,15 @@
 			buildConfigurations = (
 				601D4A041DB4A75A006B90C1 /* Debug */,
 				601D4A051DB4A75A006B90C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB26859A1F345A4A0057C718 /* Build configuration list for PBXNativeTarget "bundleWithXib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB26859B1F345A4A0057C718 /* Debug */,
+				CB26859C1F345A4A0057C718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
